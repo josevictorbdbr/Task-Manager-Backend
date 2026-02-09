@@ -29,4 +29,9 @@ public class Task {
         this.completed = true;
     }
 
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+
 }

@@ -21,4 +21,23 @@ public class TaskService {
         tasks.add(task);
         return task;
     }
+
+    public Task updateTask(Long id,boolean completed){
+        for (Task task : tasks){
+            if(task.getId().equals(id)){
+                task.setCompleted(completed);
+                return task;
+            }
+        }
+        throw new RuntimeException("Task was not found");
+    }
+
+    public void deleteTask(Long id){
+        boolean removed = tasks.removeIf(task -> task.getId().equals(id));
+
+        if(!removed){
+            throw new RuntimeException("Task was not found");
+        }
+    }
+
 }

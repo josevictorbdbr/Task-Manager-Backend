@@ -16,16 +16,32 @@ public class TaskController {
         this.taskService = taskService;
     }
 
-    @GetMapping
-    public List<Task> getTasks() {
-
-        return taskService.getAllTasks();
-    }
-
-
+    //Post
     @PostMapping
     public Task createTask(@RequestBody String title){
         return taskService.createTask(title);
     }
+
+    //Get
+    @GetMapping
+    public List<Task> getTasks() {
+        return taskService.getAllTasks();
+    }
+
+    //Put
+    @PutMapping("/{id}")
+    public Task updateTask(
+            @PathVariable Long id,
+            @RequestParam boolean completed
+    ){
+        return taskService.updateTask(id, completed);
+    }
+
+    //Delete
+    @DeleteMapping("/{id}")
+    public void deleteTask(@PathVariable Long id){
+        taskService.deleteTask(id);
+    }
+
 
 }
