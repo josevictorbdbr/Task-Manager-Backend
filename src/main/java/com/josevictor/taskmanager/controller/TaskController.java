@@ -1,5 +1,6 @@
 package com.josevictor.taskmanager.controller;
 
+import com.josevictor.taskmanager.model.TaskRequest;
 import com.josevictor.taskmanager.service.TaskService;
 import com.josevictor.taskmanager.model.Task;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +19,8 @@ public class TaskController {
 
     //Post
     @PostMapping
-    public Task createTask(@RequestBody String title){
-        return taskService.createTask(title);
+    public Task createTask(@RequestBody TaskRequest request){
+        return taskService.createTask(request.getTitle());
     }
 
     //Get
