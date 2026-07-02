@@ -1,24 +1,19 @@
 # Task Manager API
 
-Uma API REST basica desenvolvida em Java com Spring Boot e integração com banco de dados PostgreSQL para treinar desenvolvimento backend.
+A basic REST API developed in Java with Spring Boot and PostgreSQL database integration to practice backend development.
 
-## Como executar:
+## How to run:
 
-1. Clone o repositório
-2. Configure e crie um banco de dados chamado `taskmanager` usando PostGreSQL
-3. Abra o arquivo `application.properties` e atualize com seu usuario e sua senha que definiu ao instalar o PostGreeSQL.
-4. Entre na pasta do projeto e execute com Maven
-5. Testar as rotas (GET, POST, PUT, DELETE em /tasks) usando ferramentas como Postman ou Insomnia.
-  
+1. Clone the repository
+2. Configure and create a database named `taskmanager` using PostgreSQL
+3. Open the `application.properties` file and update it with your username and the password you defined when installing PostgreSQL.
+4. Enter the project folder and run it using Maven
+5. Test the routes (GET, POST, PUT, DELETE at `/tasks`) using tools like Postman or Insomnia.
 
-## Tecnologias utilizadas:
+## Built with:
 
 - Java 17
-
 - Spring Boot
-
 - Maven
-
-- PostGreSQL
-
+- PostgreSQL
 - Postman
