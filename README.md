@@ -1,16 +1,17 @@
 # Task Manager API
 
-Uma API REST basica desenvolvida em java com Spring Boot para treinar backend
+Uma API REST basica desenvolvida em Java com Spring Boot e integração com banco de dados PostgreSQL para treinar desenvolvimento backend.
 
-Como executar:
+## Como executar:
 
 1. Clone o repositório
-2. Entre na pasta do projeto
-3. Execute a aplicação com Maven
-4. Abra a pagina local host no navegador para testar
+2. Configure e crie um banco de dados chamado `taskmanager` usando PostGreSQL
+3. Abra o arquivo `application.properties` e atualize com seu usuario e sua senha que definiu ao instalar o PostGreeSQL.
+4. Entre na pasta do projeto e execute com Maven
+5. Testar as rotas (GET, POST, PUT, DELETE em /tasks) usando ferramentas como Postman ou Insomnia.
   
 
-Tecnologias utilizadas:
+## Tecnologias utilizadas:
 
 - Java 17
 
@@ -18,3 +19,6 @@ Tecnologias utilizadas:
 
 - Maven
 
+- PostGreSQL
+
+- Postman
