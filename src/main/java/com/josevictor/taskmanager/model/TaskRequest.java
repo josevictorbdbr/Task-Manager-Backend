@@ -1,13 +1,14 @@
 package com.josevictor.taskmanager.model;
 
-public class TaskRequest {
+//DTO
+public class TaskRequest{
     private String title;
 
-    public String getTitle() {
+    public String getTitle(){
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(String title){
         this.title = title;
     }
 
